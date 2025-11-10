@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAua6RU1WE4s82XuenIq3J-cxfTsmnKUQs",
-  authDomain: "three-d-model-hub.firebaseapp.com",
-  projectId: "three-d-model-hub",
-  storageBucket: "three-d-model-hub.firebasestorage.app",
-  messagingSenderId: "496729022402",
-  appId: "1:496729022402:web:840a5678d0e93f9876005",
+  apiKey: import.meta.env.VITE_APIKEY,
+  authDomain: import.meta.env.VITE_AUTHDOMAIN,
+  projectId: import.meta.env.VITE_PROJECTID,
+  storageBucket: import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGINGSENDERID,
+  appId: import.meta.env.VITE_APPID,
 };
 
 // Initialize Firebase
